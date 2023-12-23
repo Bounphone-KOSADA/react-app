@@ -6,9 +6,13 @@ import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// Creating components
-function HelloComponent() {
-  return <h1>Hello component</h1>;
+// Creating class components
+class HelloComponent extends React.Component {
+  render() {
+    return (
+       <h1>HelloComponent</h1>
+    );
+  }
 }
 
 root.render(<HelloComponent></HelloComponent>);
