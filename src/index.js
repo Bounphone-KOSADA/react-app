@@ -3,17 +3,9 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import HelloComponent from "./components/HelloComponent";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
-// Creating class components
-class HelloComponent extends React.Component {
-  render() {
-    return (
-       <h1>HelloComponent</h1>
-    );
-  }
-}
 
 root.render(<HelloComponent></HelloComponent>);
 
