@@ -6,12 +6,14 @@ import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const DataComponent = <h1>Hello Basic react</h1>;
+// Creating components
+function HelloComponent() {
+  return <h1>Hello component</h1>;
+}
 
-root.render(DataComponent);
+root.render(<HelloComponent></HelloComponent>);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-
