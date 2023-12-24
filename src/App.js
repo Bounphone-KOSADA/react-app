@@ -1,24 +1,17 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
+import Transaction from "./components/Transaction"
+
+const Title = () => <h1>Accounting application</h1>;
+const Description = () => <p>Saving in each days</p>;
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Olay
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Title></Title>
+      <Description></Description>
+      <Transaction></Transaction>
+    </>
   );
 }
 
